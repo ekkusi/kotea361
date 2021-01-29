@@ -1,0 +1,326 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>KOTEA361 OT-pohja Ekku Sipilä</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <button
+        class="navbar-toggler navbar-light border"
+        type="button"
+        data-toggle="collapse"
+        data-target="#main-navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav align-bottom align-items-end py-2">
+          <li class="nav-item">
+            <a class="nav-link navbar-brand mr-1 py-0" href=".."
+              >Takaisin pääsivulle</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-1 py-0" href="../nokkaelaimet/">Malliratkaisu</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container py-md-5 py-5">
+      <h1 class="text-md-center text-xl mb-4">Ohjeet</h1>
+      <section>
+        <h2>Työkalut</h2>
+        <p>Tässä oppitunnilla tulet tarvitsemaan seuraavia työkaluja:</p>
+        <ul>
+          <li>
+            <strong>Tekstieditori:</strong> Esimerkiksi <a href="https://code.visualstudio.com/">Visual Studio Code</a>,
+            <a href="https://notepad-plus-plus.org/">Notepad++</a> tai <a href="https://www.sublimetext.com/">Sublime Text</a> (tai mikä tahansa vastaava).
+          </li>
+          <li>
+            <strong>Selain:</strong> Esimerkiksi Google Chrome, Firefox tai
+            Safari (tai mikä tahansa vastaava).
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Tehtävä</h2>
+        <p class="font-weight-bold"><a target="_blank" href="../nokkaelaimet/">Malliratkaisun sivut</a></p>
+        <ol>
+          <li>
+            <p>
+              Tee kansiorakenne, jossa on jokin nisäkkäiden lahko ja sen kaikki
+              alakohdat hierarkisesti avattuna lahkosta lajiin asti.
+              <strong>HUOM!</strong> Älä käytä kansioiden nimissä ääkkösiä.
+              Käytä lahkojen, heimojen, sukujen ja lajien nimistä suomenkielistä
+              versioita, mikäli semmoinen löytyy.
+            </p>
+            <p>
+              Valitse nisäkkäiden lahko
+              <a
+                target="_blank"
+                href="https://laji.fi/taxon/MX.37612?showTree=true"
+                >Laji.fi</a
+              >-sivuston taksonomiasta. <strong>HUOM!</strong>
+              ei saa olla sama kuin malliratkaisussa.
+            </p>
+            <strong>Malliratkaisun kansiorakenne:</strong>
+            <ul>
+              <li>
+                nokkaelaimet
+                <ul>
+                  <li>
+                    nokkasiilit
+                    <ul>
+                      <li>
+                        tachyglossus
+                        <ul>
+                          <li>nokkasiili</li>
+                        </ul>
+                      </li>
+                      <li>
+                        pitkanokkasiilit
+                        <ul>
+                          <li>pitkanokkasiili</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    vesinokkaelaimet
+                    <ul>
+                      <li>
+                        ornithorhynchus
+                        <ul>
+                          <li>vesinokkaelain</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p class="mb-1">
+              Tee jokaiseen kansioon
+              <strong>index.html</strong> tiedosto ja tee sen body-osioon
+              seuraavat asiat:
+            </p>
+            <ol>
+              <li>Vaihda <code>&lt;title&gt;</code>-tagin sisällöksi kohdan nimi (Huom! muista poiketen tämä on <i>head</i>-osiossa.</li>
+              <li><code>&lt;h1&gt;</code>-tagilla merkittynä kohdan nimi</li>
+              <li>
+                Linkki edeltävään kansioon hierarkiassa, mikäli semmoinen löytyy
+                (esim. linkki nokkasiilit-kansioon, kun ollaan
+                tachyglossus-kansiossa). Linkin tekstisisältönä tulee olla
+                "Ylempi taso: <i>ylemmän tason nimi</i>".
+              </li>
+              <li>
+                Linkki tai linkit seuraaviin alakohtiin, mikäli semmoisia löytyy
+                (esim. linkit tachyglossus- ja pitkanokkasiilit -kansioihin, kun
+                ollaan nokkasiilit kansiossa). Linkin tekstisisältönä tulee olla
+                "Alempi taso: <i>alemman tason nimi</i>".
+              </li>
+            </ol>
+          </li>
+        </ol>
+        <p>
+          <strong>HUOM!</strong> Linkkien viittaukset tulee tehdä suhteellisin
+          viittauksin.
+        </p>
+      </section>
+      <section id="html-template">
+        <h2>HTML-pohja</h2>
+        <p>Voit käyttää index.html-tiedostoissa seuraavaa pohjaa apuna:</p>
+        <pre class="border bg-light p-2"><code>&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Nisäkkäiden hierarkiat -tehtävän pohja&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  ...
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </section>
+
+      <p>Tehtävän kohdan 2. asiat täytetään ... -kohdan tilalle.</p>
+      <section>
+        <h2>Kansiorakenteiden luominen</h2>
+        <p>
+          Voit luoda kansiorakenteet joko komentoriviltä tai suoraan
+          tiedostojenhallinnasta. <strong>Suositeltavaa</strong> kuitenkin on
+          tehdä kansiot komentoriviltä, koska tällöin hahmottuu paremmin jo
+          kansioiden polkuihin muodostuva hierarkia ja suhteelliset viittaukset.
+        </p>
+        <h3>Kansioiden luominen komentoriviltä</h3>
+        <p class="mb-1">
+          Tarvitset komentoriviltä kansioiden luomiseen seuraavia komentoja
+          (linkit johtaat tarkempiin ohjeisiin):
+        </p>
+        <ul>
+          <li>
+            <code>cd</code> - liikkuminen kansioiden välillä komentoriviltä.
+            Esim. komennolla <kbd>cd ..</kbd> siirrytään nykyisestä kansiosta
+            yksi taso taaksepäin.
+          </li>
+          <li>
+            <code>mkdir</code> - kansion luominen. Esim. komennolla
+            <kbd>mkdir joku-kansio</kbd> luotaisiin nykyiseen kansioon uusi
+            kansio nimeltä <i>joku-kansio</i>.
+          </li>
+        </ul>
+        <p class="mb-1">Muita tehtävää helpottavia komentoja:</p>
+        <ul>
+          <li>
+            <code>dir</code> - listaa nykyisen kansion sisällöt.
+            <strong>Huom!</strong> Mac:lla vastaava komento on <code>ls</code>.
+          </li>
+          <li>
+            <code>tree</code> - listaa nykyisen kansion kaikki ala-kansiot
+            hierarkisesti. <strong>Huom!</strong> Vaatii Mac:lla
+            <a
+              target="_blank"
+              href="https://sourabhbajaj.com/mac-setup/iTerm/tree.html"
+              >erillisen</a
+            >
+            asennuksen.
+          </li>
+        </ul>
+        <p>
+          Jos kaipaat tarkempaa kertausta edellisiin komentoihin tai
+          komentoriviin yleisesti, löytyy yksityiskohtaisempia ohjeita
+          <a
+            target="_blank"
+            href="https://appro.mit.jyu.fi/itkp1011/luennot/cli/"
+            >täältä</a
+          >.
+        </p>
+        <p><strong>Vinkki <i>mkdir</i> komennon käyttöön:</strong></p>
+        <p>
+          Lisäoptiolla <code>-p</code> voit luoda kansiohierarkian yhdellä
+          komennolla antamalla hierarkian polun sen sijaan, että tekisit jokaisen hierarkian kansion erikseen.
+        </p>
+        <p class="mb-1">Esimerkiksi komennolla: </p>
+        <kbd>mkdir -p nokkasiilit/tachyglossus/nokkasiili</kbd>
+        <p class="mb-1">tulee seuraavanlainen kansiorakenne:</p>
+        <ul>
+          <li>
+            nokkasiilit
+            <ul>
+              <li>
+                tachyglossus
+                <ul>
+                  <li>nokkasiili</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+      </section>
+      <section>
+        <h2>Linkit ja suhteellinen viittaus</h2>
+        <p class="mb-1">
+          <strong
+            >Lue tehtävää ennen huolellisesti seuraavien sivujen
+            sisällöt</strong
+          >
+          (jälkimmäisestä linkistä vain <i>Hyperlinkit - a</i> osio):
+        </p>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://appro.mit.jyu.fi/itkp1011/luennot/html5/viittaukset.html"
+              >Erilaiset linkkien viittaukset</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://appro.mit.jyu.fi/itkp1011/luennot/html5/#hyper"
+              >HTML-hyperlinkit</a
+            >
+          </li>
+        </ul>
+        <p>
+          Tässä esimerkkinä vaiheittainen ohjeistus malliratkaisun
+          <i>nokkasiilit</i> index.html-tiedoston sisällön luomiseen
+          tehtävänannon kohdan 2. kriteerien mukaisesti.
+        </p>
+        <ol>
+          <li>
+            Tee index.html tiedosto <i>nokkasiilit</i> kansioon ja kopio
+            tiedostoon <a href="./#html-template">HTML-mallipohja</a>
+          </li>
+          <li>
+            Vaihda <code>&lt;title&gt;</code>-tagin sisällöksi "Nokkasiilit".
+          </li>
+          <li>Tee bodyn sisälle (... tilalle) seuraavat asiat:</li>
+          <li>
+            <code>&lt;h1&gt;</code>-tagi, johon tulee tekstisisällöksi
+            "Nokkasiilit".
+          </li>
+          
+          <li>
+            Linkki ylempään tasoon (nokkaeläimet): <code>&lt;a&gt;</code>-tagi,
+            johon asetat href-ominaisuudeksi "../" ja tekstisisällöksi "Ylempi
+            taso: nokkaeläimet"
+          </li>
+          <li>
+            Linkkin ensimmäiseen alemmista tasoista (tachyglossus):
+            <code>&lt;a&gt;</code>-tagi, johon asetat href-ominaisuudeksi
+            "./tachyglossus/" ja tekstisisällöksi "Alempi taso: tachyglossus"
+          </li>
+          <li>
+            Linkkin toiseen alemmista tasoista (pitkanokkasiilit):
+            <code>&lt;a&gt;</code>-tagi, johon asetat href-ominaisuudeksi
+            "./pitkanokkasiilit/" ja tekstisisällöksi "Alempi taso: tachyglossus"
+          </li>
+        </ol>
+        <p>
+          Tee edellisen esimerkin pohjalta soveltaen kaikkiin kansioihin
+          index.html tiedostot niin, että tehtävänannon kohdan 2. kriteerit
+          täyttyvät.
+        </p>
+        <strong>Muistettavaa:</strong>
+        <ul>
+          <li>
+            Jos kansio on ylin hierarkiassa, ei linkkiä ylempään tasoon
+            luonnollisesti tehdä. Samaten jos kansio on alin hierarkiassa, ei
+            linkkiä alempiin tasoihin tehdä.
+          </li>
+          <li>
+            <strong
+              >Älä kopioi suoraan edellisestä esimerkistä tai
+              malliratkaisusta.</strong
+            >
+            Muista, että sinun pitää valita eri nisäkkäiden lahko kuin
+            malliratkaisussa (ei siis nokkaeläimet), joten sinun tulee myös
+            vaihtaa kansioiden nimet ja viittaukset vastaamaan omaa
+            hierarkiaasi.
+          </li>
+        </ul>
+      </section>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
