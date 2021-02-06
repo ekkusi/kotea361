@@ -20,22 +20,101 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-between" id="main-navigation">
+      <div
+        class="collapse navbar-collapse justify-content-between"
+        id="main-navigation"
+      >
         <!-- Page specific nav -->
         <ul class="navbar-nav align-items-center align-items-md-end py-2">
           <li class="nav-item">
-            <a class="nav-link py-0" href=".">Ohjeet</a>
+            <a class="nav-link navbar-brand py-0" href="..">Takaisin pääsivulle</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-1 py-0" href="../sydamenosat_EkkuS.png">Malliratkaisu</a>
           </li>
         </ul>
         <ul id="tasks-nav" class="navbar-nav align-items-center py-2">
-
+          <!-- Content comes from navigation.js-->
         </ul>
       </div>
     </nav>
     <div class="container py-md-5 py-5">
-      <h1 class="text-md-center text-xl mb-4">
-        Ohjeet
-      </h1>
+      <h1 class="text-md-center text-xl mb-4">Ohjeet</h1>
+      <section id="tools">
+        <h2>Työkalut</h2>
+        <p>Tulet käyttämään tehtävässä seuraavia työkaluja:</p>
+        <ul>
+          <li><a target="_blank" class="font-weight-bold" href="https://pixlr.com/x/">Pixlr X</a> - Online kuvanmuokkausohjelma</li>
+        </ul>
+      </section>
+      <section id="assigment">
+        <h2>Tehtävä</h2>
+        <a target="_blank" class="d-block font-weight-bold mb-2" href="../sydamenosat_EkkuS.png">Malliratkaisu</a>
+        <p>Tehtävänäsi on tuottaa yllä olevaa malliratkaisua vastaava kuva käyttäen
+          <a target="_blank" href="https://pixlr.com/x/">Pixlr X</a>
+          -ohjelmistoa. Tehtäväsi on siis muokata kuvaa sydämen rakenteesta luomalla siihen tekstilaatikkoja ja nuolia, jotka osoittavat sydämen eri osien nimet.
+          Osia tulee olla nimettynä vähintään samat kuin mitä malliratkaisussa näkyy tyhjiä laatikoita. Malliratkaisusta eroten tekstilaatikoissa pitää siis olla
+          tekstilaatikot täydennettynä.
+        </p>
+        <p>Voit soveltaa ja luoda tekstilaatikot sekä osoittimet haluamallasi tavalla, mutta sinun tulee kuitenkin suorittaa Pixlr:ssa vähintään seuraavia toimintoja:</p>
+        <ul>
+          <li>Luoda tekstilaatikko, vaihtaa sen tekstin sekä taustan väriä ja muokata sen sisältämää tekstiä.</li>
+          <li>Luoda Pixlr-elementtejä (esimerkiksi Line), joka toimii osoittimena tietyn sydämen osan kohtaan.</li>
+          <li>Tallentaa kuva png-muodossa 720x1080px kokoisena ja nimellä <i>sydamenosat_EtunimiS</i> (EtunimiS kohtaan oma etunimesi + sukunimen ensimmäinen kirjain).</li>
+        </ul>
+        <p class="mb-2">Lataa ensin alla oleva pohja omalle koneellesi:</p>
+        <a target="_blank" class="d-block font-weight-bold mb-3" href="../sydan-muokkaamaton.jpg">sydan-muokkamaton.jpg</a>
+        <p>Aloita sitten muokkaamaan kuvaa painamalla
+          <a target="_blank" href="https://pixlr.com/x/">Pixlr X:n etusivulla</a>
+          <i>Open image</i>-painiketta ja valitsemalla aukeavasta valikosta äsken ladattu kuvapohja.
+          Alta löydät eri muokkaustoimintojen tekemiseen.
+        </p>
+      </section>
+      <section id="add-text" class="mb-4">
+        <h2>Tekstin lisäys kuvaan</h2>
+        <p>Seuraavassa GIF:ssä näkyy vaiheet, kuinka lisätä Pixlr X -ohjelmalla tekstilaatikko sekä vaihtaa laatikon värejä ja tekstiä.</p>
+        <img src="./ohjekuvat/tekstilisays.gif" class="d-block w-100 mb-3" />
+        <p class="font-weight-bold mb-0">Vaiheet tekstilaatikon lisäämiseen ovat seuraavat:</p>
+        <ol>
+          <li>Valitse sivuvalikosta <i>ADD TEXT</i>.</li>
+          <li>Valitse aukeavasta valikosta <i>Add new text - New default text</i>.</li>
+          <li>Vaihda tekstin väri muokkaamalla <i>Fill</i>-ominaisuutta. Voit valita eri värin kuin mallissa</i></li>
+          <li>Vaihda taustan väri aukaisemalla <i>Background</i>-valikko ja valitsemalla siihen uusi väri. Voit valita eri värin kuin mallissa.</li>
+          <li>Raahaa laatikko oikealle paikalle hiiren vasenta näppäintä pohjassa pitäen.</li>
+          <li>Muokkaa tarvittaessa laatikon kokoa sen reunoista hiirellä vetämällä.</li>
+          <li>Muokkaa tekstiä tuplaklikkaamalla laatikkoa tai muokkaamalla vasemmasta valikosta <i>Text</i>-ominaisuutta.</li>
+        </ol>
+      </section>
+      <section id="add-line">
+        <h2>Elementin lisäys kuvaan</h2>
+        <p>Seuraavassa GIF:ssä näkyy vaiheet, kuinka lisätä kuvaan Pixlr-elementti ja kuinka vaihtaa sen kokoa sekä paikkaa.</p>
+        <img src="./ohjekuvat/nuolilisays.gif" class="w-100 mb-3" />
+        <p class="font-weight-bold mb-0">Vaiheet Pixlr-elemntin lisäämiseksi ovat seuraavat:</p>
+        <ol>
+          <li>Valitse sivuvalikosta <i>ADD ELEMENT</i>.</li>
+          <li>Valitse <i>Shape</i>.</li>
+          <li>Valitse <i>LINE</i>.</li>
+          <li>Valitse valikosta haluamasi viiva. Mallissa tämä on valkoinen viiva.</li>
+          <li>Muokkaa elementtiä sopivan kokoiseksi laatikon kulmasta vetäen.</li>
+          <li>Siirrä elementtiä, kuten tekstiälaatikkoa eli vasen näppäin pohjassa raahaten.</li>
+          <li>Käännä tarvittaessa viivaa laatikon päällä olevasta pallosta.</li>
+        </ol>
+      </section>
+      <section id="save">
+        <h2>Tallentaminen</h2>
+        <p>Seuraavassa GIF:ssä näkyy vaiheet, kuinka tallentaa kuva tietyllä tiedostotyypillä, koolla ja nimellä.</p>
+        <img src="./ohjekuvat/tallennus.gif" class="w-100 mb-3" />
+        <p class="font-weight-bold mb-0">Vaiheet tallentamiseen ovat seuraavat:</p>
+        <ol>
+          <li>Paina <i>SAVE</i>-näppäintä.</li>
+          <li>Vaihda nimi kohdasta <i>File name</i>.</li>
+          <li>Vaihda <i>File type</i> PNG-tyyppiseksi.</li>
+          <li>Vaihda leveys (<i>Image width</i>) 720px kokoiseksi ja korkeus (<i>Image height</i>) 1080px kokoiseksi.
+            Näistä toista muokkaamalla toisen pitäisi skaalautua automaattisesti.
+          </li>
+          <li>Paina <i>Download</i> ja muokatun kuvan pitäisi latautua tietokoneellesi.</li>
+        </ol>
+      </section>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
