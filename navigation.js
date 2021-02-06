@@ -5,7 +5,7 @@ const rootDepth = isLocalhostServer ? 0 : 2; // If not on localhost, root is htt
 // Gets relative path to root based on window.location.pathname of current directory
 const getRelativePathToRoot = () => {
   const currentPath = window.location.pathname;
-  const depth = currentPath.split("/").length - 2 - rootDepth; // - 2 to take empty levels out (e.g. /ot2/ returns ["", "ot2", ""] -> path is 1 depth long)
+  const depth = currentPath.split("/").length - 2 - rootDepth; // - 2 to take empty levels out (e.g. pathname /ot2/ returns ["", "ot2", ""] -> path is 1 depth long)
   const depthFixed = depth < 0 ? 0 : depth; // Earlier line breaks if path is root without / (e.g. http://localhost, not http://localhost/), fix by checking if depth is ;
   let relativePathToRoot = "";
   for (let i = 0; i < depthFixed; i++) {
