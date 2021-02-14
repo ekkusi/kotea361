@@ -1,6 +1,6 @@
 using System;
 
-public class Summa
+public class Teht2Summa
 {
     public static void Main()
     {
