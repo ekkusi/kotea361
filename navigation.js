@@ -1,5 +1,7 @@
 const currentUrl = window.location.href;
-const isLocalhostServer = currentUrl.startsWith("http://locahost") || currentUrl.startsWith("http://127.0.0.1");
+const isLocalhostServer =
+  currentUrl.startsWith("http://locahost") ||
+  currentUrl.startsWith("http://127.0.0.1");
 const rootDepth = isLocalhostServer ? 0 : 2; // If not on localhost, root is http://users.jyu.fi/~eksasipi/KOTEA361, so we need to remove 2 from getRelativeRootPath calculation
 
 // Gets relative path to root based on window.location.pathname of current directory
@@ -26,6 +28,10 @@ const tasks = [
   {
     href: `${getRelativePathToRoot()}ot4`,
     title: "OT4",
+  },
+  {
+    href: `${getRelativePathToRoot()}ot5`,
+    title: "OT5",
   },
 ];
 
