@@ -1,0 +1,150 @@
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <title>KOTEA361 OT7 Ekku Sipilä</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="ot7.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <button
+        class="navbar-toggler navbar-light border"
+        type="button"
+        data-toggle="collapse"
+        data-target="#main-navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-between"
+        id="main-navigation"
+      >
+        <!-- Empty div to trigger justify-content-between -->
+        <div></div>
+        <!-- General nav for all of the tasks -->
+        <ul id="tasks-nav" class="navbar-nav align-items-center py-2">
+          <!-- Content comes from navigation.js-->
+        </ul>
+      </div>
+    </nav>
+    <div class="container py-md-5 py-5">
+      <h1 class="text-md-center text-xl mb-4">
+        KOTEA361 OT7 - Ekku Sipilä
+      </h1>
+      <section id="description">
+        <h2 class="mb-3">Kuvaus</h2>
+        <p class="mb-1">
+          <span class="font-weight-bold">Aihe:</span>
+          For-silmukat ohjelmoinnissa
+        </p>
+        <p class="mb-1">
+          <span class="font-weight-bold">Oppiaine:</span>
+          Tietotekniikka
+        </p>
+        <p class="mb-1">
+          <span class="font-weight-bold">Kohderyhmä:</span>
+          Ohjelmoinnin aloittelijat, lukio tai korkeakoulu
+        </p>
+        <p class="mb-2">
+          <span class="font-weight-bold">Esitietovaatimukset:</span>
+          <ul>
+            <li>Ymmärtää muuttujat perustasolla ohjelmoinnissa.</li>
+            <li>Ymmärtää ehtolauseet perustasolla ohjelmoinnissa.</li>
+          </ul>
+        </p>
+        <p>
+          Tämän opetusvideon tarkoituksena on opettaa for-silmukan yleistä teoriapohjaa sekä käyttämistä C#-kielellä.
+          Videon on tarkoitus toimia johdattelevana videona ohjelmoinnin alkeiskurssin silmukoiden käsittelemiseen.
+          Sen on kuitenkin tarkoitus pystyä toimimaan myös erillisenä lisämateriaalina sellaisenaan.
+          Ajattelin itse videon toimivan tämän kurssin tuotoksistani <a href="../ot5">oppimistehtävä 5:n</a> tukena ja aiheeseen johdattelevana materiaalina.
+        </p>
+      </section>
+      <section id="plan">
+        <h2 class="mb-3">Kuvaussuunnitelma</h2>
+        <p>
+          Videon on tarkoitus koostua kahdesta eri osasta. Ensimmäisessä osassa tarkoituksenani on avata for-silmukoiden teoriaa kuvaamalla paperille visuaalista
+          hahmotelmaa silmukoiden toiminnasta. Tässä hahmotelmassa tarkoitukseni on avata for-silmukan sisältämiä osia yleisellä tasolla ilman varsinaista koodia.
+          Suunnitelmani on kuvata video siitä, kun hahmottelen näitä asioita paperille piirtämällä. Äänitän tämän jälkeen erikseen kyseisen videon päälle puheen,
+          jotta voin paremmin avata paperille hahmoteltuja asioita. Nopeutan tarvittaessa tätä videota, mikä paperille hahmottelemiseni on hidasta. 
+        </p>
+        <p>
+          Jos osoittautuu vaikeaksi saada erillistä äänitystä ja videota toimimaan yhteen, yritän todennäköisesti yhdistää puheen samaan videoon piirtämisen kanssa.
+          Haittapuolena tässä uskon olevan sen, että tämä aiheuttaa äänenlaadun heikkenemistä ja videoiden ääniraitojen eroavaisuutta toisistaan, koska ensimmäisen videon mikrofonina joutuisin tällöin älypuhelimeni mikrofonia.
+        </p>
+        <p>
+          Toisessa osassa tarkoitukseni on toteuttaa esimerkillä yksinkertainen ohjelma C#-kielellä, jossa käytän for-silmukkaa. Alustava ajatukseni on tehdä ohjelma,
+          joka tulostaa luvut 1-100 käyttäen silmukkaa. Tämän videon toteutan ruutukaappausvideona. Tarkoituksenani on selittää ja näyttää ohjelmaa tehdessäni kaikki
+          edellisessä videossa näyttämäni silmukan osat koodin puolella.
+        </p>
+        <p class="mb-1">Olennaisia osia ja huomiotavia asioita ensimmäiseen videoon:</p>
+        <ul>
+          <li>Esitellään kaikki for-silmukan osat eli alkulause, ehtolause ja loppuoperaatio.</li>
+          <li>Visuaalinen hahmotus siitä, miten näiden kulku etenee ja miten nämä osat liittyvät toisiinsa.</li>
+          <li>Visuaalinen hahmotus silmukasta on silmukanomainen.</li>
+        </ul>
+        <p class="mb-1">Olennaisia osia ja huomiotavia asioita toiseen videoon:</p>
+        <ul>
+          <li>Linkitetään edelliseen videoon eli selitetään osia, kuten esimerkiksi <code>for (<u>int i = 0;</u>...)</code> kohtaa, että tämä vastaa edellisessä videossa esiteltyä <i>alkulause</i>-osaa.</li>
+          <li>Käytetään ohjelmaa ajaessa debuggeria, jotta voidaan käydä silmukan kulkemista ohjelmasta kohta kohdalta läpi ja näyttää, miten ohjelma kulkee for-silmukan osien läpi.</li>
+        </ul>
+        <p class="mb-1">Alustava videon kulku:</p>
+        <ul>
+          <li><i>0 - 2 min: </i>Hahmotelmavideo</li>
+          <li><i>2 - 5 min: </i>Ohjelman tekeminen ja sen osien selittäminen</li>
+          <li><i>5 - 6 min: </i>Debuggerilla ohjelman suorituksen läpi käyminen ja lopetus</li>
+        </ul>
+        <p>Nämä aikataulutukset tulevat todennäköisesti muuttumaan, kun videon käytännössä toteutan. Aikataulujen pääasiallisena tarkoituksena on antaa kuvaa osien painotusten suhteista ja alkupyrkimyksistäni. </p>
+      </section>
+      <section id="video">
+        <h2 class="mb-3">Toteutunut video</h2>
+        <iframe allowfullscreen class="video" src="https://www.youtube.com/embed/r1d4pevdjdA"> </iframe>
+      </section>
+      <section id="reflection">
+        <h2>Pohdinta</h2>
+        <p>
+          Päädyin toteuttamaan videon ensimmäisen osan alkuperäisestä suunnitelmastani poiketen yhtenä raitana, jossa on sekä video että ääni ilman videon nopeutusta.
+          Tämä päätös johtui suunnitelmassani pohtimastani mahdollisesta haasteesta äänen jälkikäteen yhdistämisessä. Lopputulos toimi näin paremmin, vaikka jouduinkin
+          hieman oikomaan joissakin kohdissa, kuten esimerkiksi valmiin pohjan piirtämisessä videon alkuun.
+        </p>
+        <p>
+          Tämän lisäksi toinen suunnitelmasta poikkeava kohta oli videon pituus. Tämä valitettavasti meni yli tehtävän 6 minuutin maksimirajan. Yritin pitää videot
+          ja esittelyt mahdollisimman tiiviinä, mutta lopputuloksesta tuli silti noin 7 minuuttia 30 sekuntia pitkä. Asiat olisi varmasti pystynyt esittämään nopeamminkin,
+          mutta tuolloin olisin joutunut mielestäni karsimaan joitakin olennaisia informaatioita pois. Jouduin jo nyt ehkä hieman selittämään joitakin kohtia nopeammin
+          kuin mitä olisin halunnut kyseisestä aiheesta selittää. Suurimpana kehityskohteena tässä olisi omasta puheen pieni hienosäätäminen, jotta videolla esiintyvää
+          pientä "sönkötystä" tai turhaa toistamista saisi vielä parannettua. Tämän uskon tulevan parhaiten vaan toistoja tekemällä eli useampia videoita toteuttamalla,
+          mikäli kyseisessä asiassa haluaa harjaantua. Toki hyvä käsikirjoitus ja suunnitelma sekä pieni kuivaharjoittelu ovat jo nyt suurta valttia tämän suhteen.
+        </p>
+        <p>
+          Vielä jälkipohdinnoiksi haluan mainita, että olisin saattanut tehdä videon ensimmäisen osan hieman eri tavalla, jos tehtävänannossa ei olisi ollut kameralla kuvatun kuvan vaatimusta.
+          Kyseiseen osaan olisi voinut toimia esimerkiksi jonkinlaisen animaation tekeminen samoista hahmotelmista ja niiden päälle äänityksen tekeminen. Käsin kirjoittamisen ja 
+          piirtämisen kuvaamista oli kuitenkin hauska testailla tässä tehtävssä ja se toimii mielestäni ihan hyvin, vaikka kyseessä onkin vähän "kömpelö" esitysmuoto koodin hahmottamiseksi. 
+        </p>
+        <p>Noista hauskoista kuvaustesteistä on vielä yksi bonuskuva alla:)</p>
+      </section>
+      <section id="bonus">
+        <h2 class="mb-3">Bonus</h2>
+        <img class="image" src="kuvaus-sessarit.jpg" alt="Videon kuvaussessarit" />
+        <p class="image font-italic">Paperille piirtämisen kuvaamista, kun käytettävinä laitteina on joko kännykkä tai läppäri. Kuvauspaikka päätyi olemaan ihan mielenkiintoinen:)</p>
+      </section>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../navigation.js"></script>
+  </body>
+</html>

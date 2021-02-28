@@ -37,6 +37,10 @@ const tasks = [
     href: `${getRelativePathToRoot()}ot6`,
     title: "OT6",
   },
+  {
+    href: `${getRelativePathToRoot()}ot7`,
+    title: "OT7",
+  },
 ];
 
 const joku = document.getElementById("tasks-nav");
