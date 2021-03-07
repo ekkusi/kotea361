@@ -1,0 +1,205 @@
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <title>KOTEA361 OT8 Ekku Sipilä</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="./ot8.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <button
+        class="navbar-toggler navbar-light border"
+        type="button"
+        data-toggle="collapse"
+        data-target="#main-navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-between"
+        id="main-navigation"
+      >
+        <!-- Page specific nav -->
+        <ul class="navbar-nav align-items-center align-items-md-end py-2"></ul>
+        <!-- General nav for all of the tasks -->
+        <ul id="tasks-nav" class="navbar-nav align-items-center py-2">
+          <!-- Content comes from navigation.js-->
+        </ul>
+      </div>
+    </nav>
+    <div class="container py-md-5 py-5">
+      <h1 class="text-md-center text-xl mb-4">
+        KOTEA361 Oppimistehtävä 8 - Ekku Sipilä
+      </h1>
+      <section id="description">
+        <h2 class="mb-3">Tehtävän yleiset tiedot</h2>
+        <p class="mb-1">
+          <span class="font-weight-bold">Näkökulma:</span>
+          Ilmaisohjelman demonstraatio
+        </p>
+        <p class="mb-1">
+          <span class="font-weight-bold">Käytättävä ohjelmisto:</span>
+          <a target="_blank" href="https://www.shortcutfoo.com/">ShortcutFoo</a>
+        </p>
+        <p class="mb-1">
+          <span class="font-weight-bold">Oppiaine:</span>
+          Tieto- ja viestintätekniikka
+        </p>
+        <p class="mb-1">
+          <span class="font-weight-bold">Oppitunnin kesto:</span>
+          45 min
+        </p>
+        <p class="mb-1">
+          <span class="font-weight-bold">Kohderyhmä:</span>
+          7-9 vuosiluokat
+        </p>
+      </section>
+      <section>
+        <h2>Tunnin tausta ja ohjelmiston esittely</h2>
+        <p>
+          Mielestäni yksi tietokoneen ja sen ohjelmistojen käyttämistä eniten
+          tehostavia asioita on pikanäppäinkomentojen opetteleminen. Jotkin
+          komennot ovat miltei universaaleja (esim.
+          <code>Ctrl + C</code> kopioimiselle) eri järjestelmien väleillä ja
+          jotkin taas ohjelmistokohtaisempia. Riippumatta tästä erosta, ovat
+          nämä komennot kuitenkin usein melko piilossa järjestelmien käyttäjiltä
+          ainakin, jos käyttäjiltä ei itse lähde pohtimaan, voisiko jotain asiaa
+          tehdä jollakin komennolla. Tämän lisäksi pikanäppäinkomentojen
+          opettelua vaikeuttaa se, että niiden automatisoituminen vaatii hyvin
+          suuren määrän toistoja integroituakseen käytännön työskentelyn lomaan.
+          Tämän takia uuden komennon opettelu voi helposti jäädä unholaan,
+          vaikka sen arvon olisikin oppinut itse huomaamaan.
+        </p>
+
+        <p>
+          Yksi näihin ongelmiin vastaavista ilmaisohjelmistoista on
+          <a target="_blank" href="https://www.shortcutfoo.com/">ShortcutFoo</a
+          >. Se on ilmaisohjelma, jota tarkoituksena on opettaa
+          pikanäppäinkomentoja. Sen luojien mukaan se on alun perin tehty
+          "kehittäjiltä kehittäjille", joka näkyy myös ohjelman sisällössä.
+          Suurin osa ShortcutFoon sisällöstä painottuu ohjelmoinnissa ja
+          ohjelmistokehityksessä käytettäviin ohjelmiin. Tämä ei kuitenkaan
+          tarkoita, etteikö sitä voisi käyttää myös muiden ohjelmistojen
+          pikanäppäinten opettelemiseen.
+        </p>
+        <p>
+          Ohjelmistokehityksen ulkopuolella valmiita materiaaleja on esimerkiksi
+          Microsoft Office -ohjelmistoille. Nämä tarjoavat jo hyödyllistä
+          opeteltavaa melkeinpä kaikille tietokoneen käyttäjille. Niiden lisäksi
+          opettajan näkökulmasta olennaisena ominaisuutena ohjelmassa on omien
+          oppituntien tekeminen. Mahdollisuutena on siis luoda mihin vain
+          ohjelmaan oma tunti halutuista näppäinkomennoista. Tämä ominaisuus
+          valitettavasti on kuitenkin 8e/kk maksun takana. Myös tuntien eli
+          "Dojojen" täysiin sisältöihin käsiksi pääseminen on samaisen
+          maksumuurin takana. Ilmainen sisältö kuitenkin riittää tarjoamaan
+          arvoa käyttäjälle.
+        </p>
+        <p>
+          Oppiminen on ohjelmassa tehty pelillistetysti. Tuntien eteneminen
+          menee tasoissa, niiden suorittamisella kerätään pisteitä ja
+          mahdollisuutena on myös kisata tunneissa muiden käyttäjien kanssa.
+          Tämä tuo pientä lisämaustetta komentojen opettelemiseen ja tuo myös
+          mielekkyyttä sen käyttämiseen. Ohjelmisto olisi siis voinut sopia
+          kontekstiltaan vielä paremmin oppimistehtävä 6:n aihepiiriin, mutta
+          toimii mielestäni myös tässä tehtävässä.
+        </p>
+        <p>
+          Ohjelmiston käyttämisen ohjeistus ja käytännön toiminnan esittely
+          löytyy alta videosta:
+        </p>
+        <iframe
+          allowfullscreen
+          class="video"
+          src="https://www.youtube.com/embed/DdJgul1wepE"
+        >
+        </iframe>
+      </section>
+      <section id="description">
+        <h2>Opetustilanteen kuvaus</h2>
+        <p>
+          Oppitunnilla opetellaan Microsoft Wordissa ja yleisesti tietokoneiden
+          käytössä tarvittavia pikanäppäimiä. Pikanäppäinten opetteluun
+          hyödynnetään
+          <a
+            target="_blank"
+            href="https://www.shortcutfoo.com/app/dojos/word-win"
+            >Shortcutfoon Word-dojoa</a
+          >. Tunnin kesto on 45min ja etenee seuraavan aikataulun mukaisesti:
+        </p>
+        <ul>
+          <li>
+            <b>0-10 min:</b> Opettajan johdattelu Wordin pikanäppäimiin sekä
+            Shortcutfoon käyttöön. Tähän kuuluu myös muu valmistelu, kuten
+            laitteiden jakaminen oppilaille.
+          </li>
+          <li>
+            <b>10-20 min:</b> Itsenäistä Shortcutfoon Word-dojon suorittamista.
+            Voi tehdä myös ryhmissä.
+          </li>
+          <li>
+            <b>20-25 min:</b> Kilpailu Word-dojosta. Onnistuu Shortcutfoon
+            "Fight with a friend"-toiminnon kautta.
+          </li>
+          <li>
+            <b>25-40 min:</b> Opitun tuominen käytäntöön Word-ohjelmaan. Tekstin
+            tuottamista opittujen pikanäppäinkomentojen avulla.
+          </li>
+          <li><b>40-45 min:</b> Loppupohdinnat yhdessä ja tunnin opettelua.</li>
+        </ul>
+        <p>
+          Oppitunti perustuu siis paljon itsenäisen työskentelyn varaan. Näissä
+          itsenäisissä osioissa voi oman harkinnan mukaan joko pitää työskentely
+          täysin itsenäisenä tai jakaa oppilaat pienryhmiin tekemään tehtäviä
+          yhdessä. Tämän työskentelyn aikana opettaja voi kierrellä luokassa ja
+          avustaa tehtävissä tarvittaessa.
+        </p>
+      </section>
+      <section id="goals">
+        <h2>Oppitunnin tavoitteet</h2>
+        <p>
+          Oppitunnin tavoitteena on opettaa Microsoft Wordin tehokkaampaa
+          käyttöä. Tavoitteena on oppia sen, sekä monien muiden ohjelmien,
+          käyttöä tehostavia pikanäppäinkomentoja.
+        </p>
+        <p>
+          Yleispiirteisempiä tieto- ja viestintätekniikan tavoitteita löytyy 7-9
+          vuosiluokille
+          <a
+            target="_blank"
+            href="https://www.oph.fi/sites/default/files/documents/perusopetuksen_opetussuunnitelman_perusteet_2014.pdf"
+            >Perusopetuksen opetussunnitelman perusteista</a
+          >
+          seuraavia:
+        </p>
+        <ul>
+          <li>
+            <i>Käytännön taidot ja oma tuottaminen:</i> Oppilaita kannustetaan
+            oma-aloitteiseen tieto- ja viestintäteknologian hyödyntämiseen
+            erilaisissa oppimistehtävissä sekä eri tehtäviin sopivien työtapojen
+            ja välineiden valintaan. Heidän käsityksensä eri laitteiden,
+            ohjelmistojen ja palvelujen käyttö- ja toimintalogiikasta syvenee.
+          </li>
+        </ul>
+      </section>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../navigation.js"></script>
+  </body>
+</html>
